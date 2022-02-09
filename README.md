@@ -2,6 +2,8 @@
 
 The perfect starting point for your next web app built with Bootstrap 5. A free and minimal starter kit to build fast and modern dashboards and applications.
 
+[<img src="https://www.netlify.com/img/deploy/button.svg" />](https://app.netlify.com/start/deploy?repository=https://github.com/webpixels/bootstrap-dashboard-kit)
+
 <img src="https://repository-images.githubusercontent.com/457349987/98a31ae0-8150-47f0-b8cf-005303e643ea" >
 
 ## Features
