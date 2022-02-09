@@ -16,8 +16,6 @@ The perfect starting point for your next web app built with Bootstrap 5. A free 
 * Example JavaScript file (js/main.js) showing how to import all Bootstrap
 * HTML, CSS, and JS minification
 
-[**Live Preview →**](https://bootstrap-dashboard-kit.webpixels.works)
-
 ---
 
 ## Getting Started
@@ -48,7 +46,7 @@ For additional eleventy commands, visit the [Eleventy command line usage page](h
 
 ## Highlights
 
-Clever is architected as an extension of Bootstrap, built for a specific set of problems. This means not only extending the base components of Bootstrap, but also adding completely new components, utilities, and plugins. Our themes are also different for several reasons:
+Our products are architected as an extension of Bootstrap, built for a specific set of problems. This means not only extending the base components of Bootstrap, but also adding completely new components, utilities, and plugins. Our themes are also different for several reasons:
 
 ### No custom CSS code
 
@@ -101,6 +99,9 @@ If you'd like to explore the full list of features, we've created a standalone v
 - All-set authentication flow: login, sign up, forgot password, profile flows
 - Built-in apps: Project Management, Kanban
 - Fully customized charts using the Apex Charts plugin
+
+- [Product Details](https://webpixels.io/themes/clever-admin-dashboard-template)
+- [Live Preview](https://clever-dashboard.webpixels.work/)
 
 or you can get unlimited access to all the components and templates by upgrading to PRO.
 
