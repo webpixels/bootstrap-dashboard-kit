@@ -1,0 +1,248 @@
+---
+layout: base
+title: Welcome!
+emoji: 👋
+header:
+    nav: false
+permalink: '/index.html'
+---
+
+<!-- Container -->
+<div class="container-fluid vstack gap-6">
+    <!-- Card stats -->
+    <div class="row g-6">
+        <div class="col-xl-3 col-sm-6 col-12">
+            {% inject "components/card-stats.njk", {
+				title: 'Budget',
+				value: '$750.90',
+				icon: {
+					color: 'tertiary',
+					code: 'credit-card'
+				},
+				badge: {
+					color: 'success',
+					text: '30%',
+					icon: {
+						code: 'arrow-up'
+					},
+					helper: 'Since last month'
+				}
+			} %}
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            {% inject "components/card-stats.njk", {
+                title: 'New projects',
+				value: '215',
+				icon: {
+					color: 'primary',
+					code: 'people'
+				},
+				badge: {
+					color: 'success',
+					text: '23%',
+					icon: {
+						code: 'arrow-up'
+					},
+					helper: 'Since last week'
+				}
+			} %}
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            {% inject "components/card-stats.njk", {
+                title: 'Total hours',
+				value: '1.400',
+				icon: {
+					color: 'info',
+					code: 'clock-history'
+				},
+				badge: {
+					color: 'danger',
+					text: '-10%',
+					icon: {
+						code: 'arrow-down'
+					},
+					helper: 'Since last month'
+				}
+			} %}
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            {% inject "components/card-stats.njk", {
+                title: 'Work load',
+				value: '95%',
+				icon: {
+					color: 'warning',
+					code: 'minecart-loaded'
+				},
+				badge: {
+					color: 'success',
+					text: '15%',
+					icon: {
+						code: 'arrow-up'
+					},
+					helper: 'Since yestearday'
+				}
+			} %}
+        </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row g-6">
+        <div class="col-xl-4">
+            <div class="card h-lg-full">
+                <div class="card-header">
+                    <div class="d-flex align-items-center">
+                        <h5 class="mb-0">Recent Activity</h5>
+                    </div>
+                </div>
+                <div class="card-body py-0 position-relative">
+                    <div class="list-group list-group-flush">
+                        {% for item in user_activities.slice(0,4) %}
+                        <div class="list-group-item px-0 position-relative hstack flex-wrap">
+                            <div class="me-3 text-white">
+                                <div class="position-relative d-inline-block text-current">
+                                    <div class="avatar rounded-circle">
+                                        <img alt="..." src="{{ item.img.src }}">
+                                    </div>
+                                    <span class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="d-flex align-items-center mb-1">
+                                    <a href="#" class="d-block h6 stretched-link">{{ item.name }}</a>
+                                    <span class="text-muted text-xs ms-2">{{ item.date }}</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="w-3/4 text-sm text-muted line-clamp-1 me-auto">
+                                        {{ item.text }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Latest Tasks</h5>
+                        </div>
+                        <div class="text-end mx-n1 d-flex align-items-center">
+                            <a href="#" class="px-2 text-muted">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </a>
+                            <a href="#" class="px-2 text-muted">
+                                <i class="bi bi-three-dots"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body pt-0 position-relative">
+                    <div>
+                        <a href="#" class="h5 d-inline-block font-semibold mb-2">Work on the website redesign</a>
+                        <p class="text-sm text-muted mb-4">
+                            I need 5 examples of the logo
+                        </p>
+                        <span class="surtitle text-muted d-block">Progress</span>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 80%;">
+                                <div class="progress progress-sm shadow-none">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col px-0 text-end">
+                                <a href="#" class="h6 text-sm">65%</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <div>
+                                <div class="hstack gap-4 justify-content-end">
+                                    <div class="position-relative text-sm">
+                                        <i class="bi bi-files-alt text-muted"></i>
+                                        <a href="#" class="text-muted text-primary-hover stretched-link">18</a>
+                                    </div>
+                                    <div class="position-relative text-sm">
+                                        <i class="bi bi-people-fill text-muted"></i>
+                                        <a href="#" class="text-muted text-primary-hover stretched-link">7</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-auto">
+                                <div class="avatar-group">
+                                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                                        <img alt="..." src="{{ '/img/people/img-1.jpg' | url }}">
+                                    </a>
+                                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                                        <img alt="..." src="{{ '/img/people/img-3.jpg' | url }}">
+                                    </a>
+                                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                                        <img alt="..." src="{{ '/img/people/img-4.jpg' | url }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div>
+                        <a href="#" class="h5 d-inline-block font-semibold mb-2">Create the new landing sections</a>
+                        <p class="text-sm text-muted mb-4">
+                            I need 5 examples of the logo
+                        </p>
+                        <span class="surtitle text-muted d-block">Progress</span>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 80%;">
+                                <div class="progress progress-sm shadow-none">
+                                    <div class="progress-bar bg-tertiary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col px-0 text-end">
+                                <a href="#" class="h6 text-sm">65%</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <div>
+                                <div class="hstack gap-4 justify-content-end">
+                                    <div class="position-relative text-sm">
+                                        <i class="bi bi-files-alt text-muted"></i>
+                                        <a href="#" class="text-muted text-primary-hover stretched-link">18</a>
+                                    </div>
+                                    <div class="position-relative text-sm">
+                                        <i class="bi bi-people-fill text-muted"></i>
+                                        <a href="#" class="text-muted text-primary-hover stretched-link">7</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-auto">
+                                <div class="avatar-group">
+                                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                                        <img alt="..." src="{{ '/img/people/img-1.jpg' | url }}">
+                                    </a>
+                                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                                        <img alt="..." src="{{ '/img/people/img-3.jpg' | url }}">
+                                    </a>
+                                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                                        <img alt="..." src="{{ '/img/people/img-4.jpg' | url }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="card">
+        <div class="card-header border-bottom">
+            <h5 class="mb-0">Latest projects</h5>
+        </div>
+        <div class="table-responsive">
+            {% inject "components/table-projects.njk", {
+            content: projects,
+            limit: 10
+            } %}
+        </div>
+    </div>
+</div>

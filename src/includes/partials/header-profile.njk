@@ -1,0 +1,66 @@
+<header class="bg-surface-secondary">
+    <!-- Cover -->
+    <div class="bg-cover" style="height: 300px; background-image: url({{ profile.cover }}); background-position: center center;"></div>
+    <!-- Info -->
+    <div class="container-fluid max-w-screen-xl">
+        <div class="row g-0">
+            <div class="col-auto">
+                <a href="#" class="avatar w-40 h-40 border border-body border-4 rounded-circle shadow mt-n16">
+                    <img alt="..." src="{{ profile.img | url  }}" class="rounded-circle">
+                </a>
+            </div>
+            <div class="col ps-4 pt-4">
+
+                <!-- Pretitle -->
+                <h6 class="text-xs text-uppercase text-muted mb-1">
+                    {{ profile.role }}
+                </h6>
+
+                <!-- Title -->
+                <h1 class="h2">
+                    {{ profile.name }}
+                </h1>
+
+                <div class="d-flex gap-2 flex-wrap mt-3 d-none d-sm-block">
+                    <a href="#" class="bg-white bg-opacity-50 bg-opacity-100-hover border rounded px-3 py-1 font-semibold text-heading text-xs">UI/UX</a>
+                    <a href="#" class="bg-white bg-opacity-50 bg-opacity-100-hover border rounded px-3 py-1 font-semibold text-heading text-xs">Mobile Apps</a>
+                    <a href="#" class="bg-white bg-opacity-50 bg-opacity-100-hover border rounded px-3 py-1 font-semibold text-heading text-xs">UI Research</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3 hstack gap-2 mt-4 mt-sm-0">
+                <a href="#" class="btn btn-sm btn-square btn-neutral">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-square btn-neutral">
+                    <i class="bi bi-bell-fill"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-primary d-block d-md-inline-block ms-auto ms-md-0">
+                    Follow
+                </a>
+            </div>
+        </div>
+        <!-- Nav -->
+        <ul class="nav nav-tabs overflow-x ms-1 mt-4">
+            <li class="nav-item">
+                <a href="#!" class="nav-link active font-bold">
+                    My profile
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link">
+                    Settings
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link">
+                    Integrations
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link">
+                    Security
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>

@@ -1,0 +1,45 @@
+[{
+    "name": "",
+    "content": [{
+        "label": "Dashboard",
+        "icon": "bar-chart-fill",
+        "path": "/index.html"
+      },
+      {
+        "label": "Profile",
+        "icon": "person-circle",
+        "path": "/profile.html"
+      },
+      {
+        "label": "Settings",
+        "icon": "gear-fill",
+        "path": "/settings.html"
+      },
+      {
+        "label": "Login",
+        "icon": "lock-fill",
+        "path": "/login.html"
+      }
+    ]
+  },
+  {
+    "name": "Resources",
+    "content": [
+      {
+        "label": "Hot it works",
+        "icon": "hand-index",
+        "url": "https://bit.ly/3uCYY2X"
+      },
+      {
+        "label": "Docs",
+        "icon": "journals",
+        "url": "https://webpixels.io/docs"
+      },
+      {
+        "label": "Premium Version",
+        "icon": "mouse3",
+        "url": "https://clever-dashboard.webpixels.work/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,227 @@
+---
+layout: base
+header: false
+permalink: '/profile.html'
+---
+
+<div class="container-fluid max-w-screen-lg">
+    <div class="vstack gap-6">
+        <div class="rounded shadow-sm bg-card">
+          <!-- Cover -->
+          <div class="h-64 rounded-top overflow-hidden bg-cover" style="background-image: url({{ profile.cover }}); background-position: center center;"></div>
+          <!-- Info -->
+          <div class="px-6 pb-6">
+              <div class="row g-0 align-items-end">
+                  <div class="col-auto">
+                      <!-- Avatar -->
+                      <div class="avatar avatar-2xl border border-body border-4 mt-n10">
+                          <img alt="..." src="{{ profile.img }}" class="rounded">
+                      </div>
+                  </div>
+                  <div class="col ps-4 pt-4">
+                      <!-- Pretitle -->
+                      <h6 class="text-xs text-uppercase text-muted mb-1">
+                          Overview
+                      </h6>
+                      <!-- Title -->
+                      <h1 class="h2">
+                          {{ profile.name }}
+                      </h1>
+                  </div>
+                  <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+                      <!-- Button -->
+                      <a href="#" class="btn btn-sm btn-neutral d-block d-md-inline-block">
+                          Follow
+                      </a>
+                  </div>
+              </div>
+              <!-- Nav -->
+              <ul class="nav nav-pills overflow-x ms-1 mt-5">
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link active font-bold">
+                          Overview
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link">
+                          Projects
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link">
+                          Members
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link">
+                          Settings
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body p-10">
+                <h5 class="mb-3">Biography</h5>
+                <p class="text-sm lh-relaxed mb-4">
+                    Personal profiles are the perfect way for you to grab their attention and persuade recruiters to continue reading your CV because you’re telling them from the off exactly why they should hire you. Of course, you’ll need to know
+                    how to write an effective statement first, but we’ll get on to that in a bit.
+                </p>
+                <p class="text-sm lh-loose mb-4">
+                    When we strive to become better than we are everything around us becomes better too. This is a wider card with supporting text below. Personal profiles are the perfect way for you to grab their attention and persuade recruiters to continue reading your CV because you’re telling them from the off exactly why they should hire you. Of course, you’ll need to know
+                    how to write an effective statement first, but we’ll get on to that in a bit.
+                </p>
+                <a href="#" class="link-primary font-semibold text-sm">Read more</a>
+            </div>
+        </div>
+        <div>
+            <h5 class="mb-4">My Files</h5>
+            <div class="row g-5">
+                <div class="col-lg-4 col-sm-6">
+                    {% inject "components/card-media.njk", {
+                        title: 'Website Redesign',
+        				img: {
+        					src: '/img/media/img-800x800-1.jpg'
+        				},
+        				badge: {
+        					color: 'danger',
+        					text: 'Project at risk'
+        				},
+        				infos: [
+        					{
+        						title: '$800,00',
+        						subtitle: 'Over budget',
+        						color: 'danger'
+        					},
+        					{
+        						title: '7',
+        						subtitle: 'Days Delay',
+        						color: 'heading'
+        					}
+        				]
+        			} %}
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    {% inject "components/card-media.njk", {
+                        title: 'Website Redesign',
+        				img: {
+        					src: '/img/media/img-800x800-2.jpg'
+        				},
+        				badge: {
+        					color: 'danger',
+        					text: 'Project at risk'
+        				},
+        				infos: [
+        					{
+        						title: '$800,00',
+        						subtitle: 'Over budget',
+        						color: 'danger'
+        					},
+        					{
+        						title: '7',
+        						subtitle: 'Days Delay',
+        						color: 'heading'
+        					}
+        				]
+        			} %}
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    {% inject "components/card-media.njk", {
+                        title: 'Website Redesign',
+        				img: {
+        					src: '/img/media/img-800x800-3.jpg'
+        				},
+        				badge: {
+        					color: 'danger',
+        					text: 'Project at risk'
+        				},
+        				infos: [
+        					{
+        						title: '$800,00',
+        						subtitle: 'Over budget',
+        						color: 'danger'
+        					},
+        					{
+        						title: '7',
+        						subtitle: 'Days Delay',
+        						color: 'heading'
+        					}
+        				]
+        			} %}
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    {% inject "components/card-media.njk", {
+                        title: 'Website Redesign',
+        				img: {
+        					src: '/img/media/img-800x800-4.jpg'
+        				},
+        				badge: {
+        					color: 'danger',
+        					text: 'Project at risk'
+        				},
+        				infos: [
+        					{
+        						title: '$800,00',
+        						subtitle: 'Over budget',
+        						color: 'danger'
+        					},
+        					{
+        						title: '7',
+        						subtitle: 'Days Delay',
+        						color: 'heading'
+        					}
+        				]
+        			} %}
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    {% inject "components/card-media.njk", {
+                        title: 'Website Redesign',
+        				img: {
+        					src: '/img/media/img-800x800-5.jpg'
+        				},
+        				badge: {
+        					color: 'danger',
+        					text: 'Project at risk'
+        				},
+        				infos: [
+        					{
+        						title: '$800,00',
+        						subtitle: 'Over budget',
+        						color: 'danger'
+        					},
+        					{
+        						title: '7',
+        						subtitle: 'Days Delay',
+        						color: 'heading'
+        					}
+        				]
+        			} %}
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    {% inject "components/card-media.njk", {
+                        title: 'Website Redesign',
+        				img: {
+        					src: '/img/media/img-800x800-6.jpg'
+        				},
+        				badge: {
+        					color: 'danger',
+        					text: 'Project at risk'
+        				},
+        				infos: [
+        					{
+        						title: '$800,00',
+        						subtitle: 'Over budget',
+        						color: 'danger'
+        					},
+        					{
+        						title: '7',
+        						subtitle: 'Days Delay',
+        						color: 'heading'
+        					}
+        				]
+        			} %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

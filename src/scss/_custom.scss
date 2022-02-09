@@ -1,0 +1,51 @@
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    background: #fff !important;
+    font-weight: 500;
+    color: #3f4254;
+    border-bottom: 1px solid #f5f8fa !important
+}
+
+.apexcharts-tooltip .apexcharts-tooltip-title {
+    padding: .5rem 1rem
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-light {
+    border-radius: .475rem !important;
+    box-shadow: 0 0 50px 0 rgba(82, 63, 105, .15) !important;
+    border: 0 !important;
+    background: #fff !important;
+    color: #3f4254
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-light:before {
+    border-bottom: 0 !important
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-light:after {
+    border-bottom-color: #fff !important
+}
+
+.card-rounded-bottom .apexcharts-canvas svg {
+    border-bottom-left-radius: .475rem;
+    border-bottom-right-radius: .475rem
+}
+
+.rounded .apexcharts-canvas svg {
+    border-radius: .475rem !important
+}
+
+.rounded-sm .apexcharts-canvas svg {
+    border-radius: .275rem !important
+}
+
+.rounded-lg .apexcharts-canvas svg {
+    border-radius: .775rem !important
+}
+
+.rounded-xl .apexcharts-canvas svg {
+    border-radius: 1rem !important
+}
+
+.apexcharts-bar-hover-white .apexcharts-bar-area:hover {
+    fill: #fff !important
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Clever Admin Dashboard Template",
+    "description": "Clever is a modern Bootstrap dashboard theme designed and coded by Webpixels to support developers and designers create beautiful and consistent applications.",
+    "url": "https://webpixels.io/themes/clever-admin-dashboard-template",
+    "lang": "en",
+    "version": "1.0.0",
+    "github": {
+        "url": ""
+    },
+    "author": {
+        "name": "Webpixels",
+        "twitter": "@webpxs",
+        "github": "webpixels",
+        "dribbble": "webpixels",
+        "email": "support@webpixels.io"
+    },
+    "changelog": {
+        "url": "https://webpixels.io/themes/clever-admin-dashboard-template/releases",
+        "updated_at": "2022-02-02"
+    },
+    "support": "https://github.com/webpixels/support/discussions/categories/bootstrap-themes",
+    "createdAt": "2022-02-02",
+    "copyright": "2022"
+}

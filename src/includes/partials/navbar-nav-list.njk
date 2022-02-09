@@ -1,0 +1,20 @@
+<ul class="navbar-nav">
+    {% if group.name %}
+    <li>
+        <span class="nav-link text-xs font-semibold text-uppercase text-muted ls-wide">
+            {{ group.name }}
+        </span>
+    </li>
+    {% endif %}
+    {% for item in group.content %}
+    <li class="nav-item">
+        <a class="nav-link{% if item.path in page.url %} active{% endif %}" href="{% if item.url %}{{ item.url }}{% else %}{{ item.path | url }}{% endif %}">
+            <i class="bi bi-{{ item.icon }}"></i> {{ item.label }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% if not loop.last %}
+<!-- Divider -->
+<hr class="navbar-divider my-5 opacity-70">
+{% endif %}

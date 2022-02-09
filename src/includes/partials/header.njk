@@ -1,0 +1,9 @@
+{% if header == "base" %}
+{% include "partials/header-base.njk" %}
+{% elif header == "profile" %}
+{% include "partials/header-profile.njk" %}
+{% elif header == false %}
+
+{% else %}
+{% include "partials/header-base.njk" %}
+{% endif %}

@@ -1,0 +1,63 @@
+<table class="table table-hover table-nowrap">
+    <thead class="table-light">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Due Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Team</th>
+            <th scope="col">Completion</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if content %}
+        {% for item in content.slice(0, limit) %}
+        <tr>
+            <td>
+                <img alt="..." src="{{ item.img.src  }}" class="avatar avatar-sm rounded-circle me-2">
+                <a class="text-heading font-semibold" href="#">
+                    {{ item.name }}
+                </a>
+            </td>
+            <td>
+                {{ item.date }}
+            </td>
+            <td>
+                <span class="badge badge-lg badge-dot">
+                    <i class="bg-{{ item.badge.color }}"></i>{{ item.badge.text }}
+                </span>
+            </td>
+            <td>
+                <div class="avatar-group">
+                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                        <img alt="..." src="{{ '/img/people/img-1.jpg' }}">
+                    </a>
+                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                        <img alt="..." src="{{ '/img/people/img-3.jpg' }}">
+                    </a>
+                    <a href="#" class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card">
+                        <img alt="..." src="{{ '/img/people/img-4.jpg' }}">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="d-flex align-items-center">
+                    <span class="me-2">{{ item.progress.value }}%</span>
+                    <div>
+                        <div class="progress" style="width: 100px;">
+                            <div class="progress-bar bg-{{ item.progress.color }}" role="progressbar" aria-valuenow="{{ item.progress.value }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ item.progress.value }}%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="text-end">
+                <a href="#" class="btn btn-sm btn-neutral">View</a>
+                <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </tbody>
+</table>

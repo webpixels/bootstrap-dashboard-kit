@@ -1,0 +1,14 @@
+<html lang="{{ site.lang }}">
+    <head>
+        {% include 'meta.njk' %}
+        {% include 'styles.njk' %}
+    </head>
+    <body>
+        <div id="app">
+            {{ content | safe }}
+        </div>
+
+        {# Scripts #}
+        <script src="{{ '/js/main.js' | url }}"></script>
+    </body>
+</html>

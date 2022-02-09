@@ -1,0 +1,57 @@
+<html lang="{{ site.lang }}">
+
+    <head>
+        {% include 'meta.njk' %}
+        {% include 'styles.njk' %}
+    </head>
+
+    <body>
+        <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+            <!-- Sidebar -->
+            {% include "partials/sidebar.njk" %}
+
+            <!-- Content -->
+            <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+
+                <!-- Header -->
+                {% include "partials/header.njk" %}
+
+                <!-- Main -->
+                <main class="py-6 bg-surface-secondary">
+                    {{ content | safe }}
+                </main>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="modalGetPro" aria-labelledby="modalGetProLabel">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content overflow-hidden">
+                    <div class="pt-16 px-md-5 pb-10 text-center bg-dark">
+                        <!-- Title -->
+                        <h1 class="text-white font-bolder mb-6">Upgrade to Pro</h1>
+
+                        <!-- Text -->
+                        <p class="text-white text-opacity-90 px-lg-5 mb-4">
+                            One of the benefits you get when working with our themes, free or premium, is that you can extend the default features with any of the <a href="https://bit.ly/3Gx0sy9">components and templates</a> available on Webpixels.
+                        </p>
+                        <p class="text-xs text-uppercase text-opacity-90 font-bold text-warning ls-relaxed mb-12 px-lg-5">
+                          With no additional setup
+                        </p>
+                        <!-- Button -->
+                        <div class="hstack gap-3 justify-content-center mb-8">
+                          <a href="https://bit.ly/3uCYY2X" class="btn btn-outline-white">Learn more</a>
+                            <a href="https://bit.ly/362yD4b" class="btn btn-primary">Get access now<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+
+                        <!-- Image -->
+                        <img class="w-2/3" src="/svg/illustrations/development.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="{{ '/js/main.js' | url }}"></script>
+    </body>
+
+</html>

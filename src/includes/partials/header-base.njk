@@ -1,0 +1,42 @@
+<header class="bg-surface-primary border-bottom{% if not header.nav %} py-6{% else %} pt-6{%endif %}">
+    <div class="container-fluid">
+        <div class="mb-npx">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+                    <!-- Title -->
+                    <h1 class="h2 ls-tight">
+                        {% if emoji %}<span class="d-inline-block me-3">{{ emoji }}</span>{% endif %}{{ title }}
+                    </h1>
+                </div>
+                <!-- Actions -->
+                <div class="col-sm-6 col-12 text-sm-end">
+                    <div class="hstack gap-2 justify-content-end">
+                        <a href="https://webpixels.io/themes/clever-admin-dashboard-template" class="btn d-inline-flex btn-sm btn-neutral border-base">
+                            Learn more
+                        </a>
+                        <a href="https://github.com/webpixels/bootstrap-dashboard-kit" class="btn btn-sm btn-dark">
+                            <span class=" pe-2">
+                                <i class="bi bi-github"></i>
+                            </span>
+                            <span>Download</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% if not header.nav == false %}
+            <!-- Nav -->
+            <ul class="nav nav-tabs mt-4 overflow-x border-0">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link active">All files</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link font-regular">Shared</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link font-regular">File requests</a>
+                </li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</header>
