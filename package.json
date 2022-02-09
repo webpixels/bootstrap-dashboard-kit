@@ -1,72 +1,72 @@
 {
-    "name": "bootstrap-dashboard-template",
-    "description": "The perfect starting point for your next project designed by Webpixels to support developers create beautiful and consistent web apps using Bootstrap.",
-    "version": "1.0.0",
-    "author": "webpixels",
-    "license": "MIT",
-    "scripts": {
-        "start": "run-p serve:eleventy watch:parcel",
-        "serve:eleventy": "cross-env ELEVENTY_ENV=local eleventy --serve",
-        "watch:parcel": "run-p watch:css watch:js",
-        "watch:css": "parcel watch ./src/scss/main.scss --dist-dir ./dist/css",
-        "watch:js": "parcel watch ./src/js/main.js --dist-dir ./dist/js",
-        "watch:images": "parcel watch ./src/img/*",
-        "build": "run-s clean build:parcel build:eleventy",
-        "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
-        "build:parcel": "run-p build:css build:js build:images",
-        "build:css": "parcel build ./src/scss/main.scss --dist-dir ./dist/css",
-        "build:js": "parcel build ./src/js/main.js --dist-dir ./dist/js",
-        "build:images": "parcel build src/assets/img/*",
-        "clean": "rm -rf dist"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/webpixels/bootstrap-dashboard-template.git"
-    },
-    "bugs": {
-        "url": "https://github.com/webpixels/bootstrap-dashboard-template/issues"
-    },
-    "homepage": "https://github.com/webpixels/bootstrap-dashboard-template#readme",
-    "keywords": [
-        "webpixels",
-        "eleventy",
-        "11ty",
-        "bootstrap",
-        "css",
-        "sass",
-        "js",
-        "mobile-first",
-        "responsive",
-        "front-end",
-        "web",
-        "utilities",
-        "starter",
-        "template"
-    ],
-    "devDependencies": {
-        "@11ty/eleventy": "^1.0.0",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
-        "@parcel/transformer-sass": "^2.2.1",
-        "autoprefixer": "^10.4.2",
-        "cross-env": "^7.0.3",
-        "eleventy-plugin-toc": "^1.1.5",
-        "html-minifier": "^4.0.0",
-        "js-beautify": "^1.14.0",
-        "markdown-it": "^12.3.2",
-        "markdown-it-anchor": "^8.4.1",
-        "markdown-it-emoji": "^2.0.0",
-        "npm": "^8.3.2",
-        "npm-run-all": "^4.1.5",
-        "nunjucks": "^3.2.3",
-        "parcel": "^2.2.1",
-        "postcss": "^8.4.5",
-        "sass": "^1.49.0"
-    },
-    "dependencies": {
-        "@popperjs/core": "^2.11.0",
-        "@webpixels/css": "^1.1.9",
-        "apexcharts": "^3.32.1",
-        "bootstrap": "^5.1.3",
-        "overlayscrollbars": "^1.13.1"
-    }
+  "name": "bootstrap-dashboard-kit",
+  "description": "The perfect starting point for your next web app built with Bootstrap 5. A free and minimal starter kit to build fast and modern dashboards and applications.",
+  "version": "1.0.0",
+  "author": "webpixels",
+  "license": "MIT",
+  "scripts": {
+    "start": "run-p serve:eleventy watch:parcel",
+    "serve:eleventy": "cross-env ELEVENTY_ENV=local eleventy --serve",
+    "watch:parcel": "run-p watch:css watch:js",
+    "watch:css": "parcel watch ./src/scss/*.scss --dist-dir ./dist/css",
+    "watch:js": "parcel watch ./src/js/main.js --dist-dir ./dist/js",
+    "watch:images": "parcel watch ./src/img/*",
+    "build": "run-s clean build:parcel build:eleventy",
+    "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:parcel": "run-p build:css build:js build:images",
+    "build:css": "parcel build ./src/scss/*.scss --dist-dir ./dist/css",
+    "build:js": "parcel build ./src/js/main.js --dist-dir ./dist/js",
+    "build:images": "parcel build src/assets/img/*",
+    "dev": "run-s clean build:parcel dev:eleventy",
+    "dev:eleventy": "cross-env ELEVENTY_ENV=development eleventy",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpixels/bootstrap-dashboard-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webpixels/bootstrap-dashboard-kit/issues"
+  },
+  "homepage": "https://github.com/webpixels/bootstrap-dashboard-kit#readme",
+  "keywords": [
+    "webpixels",
+    "11ty",
+    "bootstrap",
+    "css",
+    "sass",
+    "js",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "dashboard",
+    "application",
+    "components",
+    "utilities",
+    "starter",
+    "template"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
+    "@parcel/transformer-sass": "^2.2.1",
+    "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
+    "eleventy-plugin-toc": "^1.1.5",
+    "html-minifier": "^4.0.0",
+    "js-beautify": "^1.14.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-emoji": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.3",
+    "parcel": "^2.2.1",
+    "postcss": "^8.4.5",
+    "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.0",
+    "@webpixels/css": "^1.1.92",
+    "bootstrap": "^5.1.3"
+  }
 }

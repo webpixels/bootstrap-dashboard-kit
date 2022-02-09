@@ -1,0 +1,38 @@
+// Custom styles
+//
+// This is the place where you should place all additional styles and imports.
+// This will allow you to take advantage of future updates with lower time consumed on the upgrade process.
+
+// Scrollbar
+
+/* Firefox */
+.scrollbar {
+	scrollbar-color: $gray-300 transparent;
+  scrollbar-width: thin;
+}
+
+/* WebKit and Chromiums */
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: none;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: none;
+	background-color: $gray-300;
+}
+
+.scrollbar:hover::-webkit-scrollbar-thumb
+{
+	background-color: shade-color($gray-300, 5%);
+}
