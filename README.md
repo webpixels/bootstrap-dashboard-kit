@@ -120,6 +120,6 @@ Get updates on the development of our tools, components, or themes, and chat wit
 - Get inspired through our designs on [Dribbble](https://dribbble.com/webpixels)
 - Check out our open-source projects on [Github](https://github.com/webpixels)
 
-## Thank You
+## Copyright
 
-Made with ❤️ by [Webpixels](https://webpixels.io).
+Made with ❤️ by [Webpixels](https://webpixels.io). Open-sourced software licensed under the MIT license.
